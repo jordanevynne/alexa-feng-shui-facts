@@ -21,7 +21,7 @@
 /**
  * App ID for the skill
  */
-var APP_ID = undefined; //replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
+var APP_ID = "amzn1.echo-sdk-ams.app.28556fd7-9f9e-459f-97ec-c82ef6dac89e";
 
 /**
  * Array containing feng shui facts.
