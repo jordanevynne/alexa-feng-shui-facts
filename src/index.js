@@ -62,20 +62,20 @@ var AlexaSkill = require('./AlexaSkill');
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance
  */
-var FengShuiMaster = function () {
+var SpaceGeek = function () {
     AlexaSkill.call(this, APP_ID);
 };
 
 // Extend AlexaSkill
-FengShuiMaster.prototype = Object.create(AlexaSkill.prototype);
-FengShuiMaster.prototype.constructor = FengShuiMaster;
+SpaceGeek.prototype = Object.create(AlexaSkill.prototype);
+SpaceGeek.prototype.constructor = SpaceGeek;
 
-FengShuiMaster.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequest, session) {
+SpaceGeek.prototype.eventHandlers.onSessionStarted = function (sessionStartedRequest, session) {
     console.log("FengShuiMaster onSessionStarted requestId: " + sessionStartedRequest.requestId + ", sessionId: " + session.sessionId);
     // any initialization logic goes here
 };
 
-FengShuiMaster.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
+SpaceGeek.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
     console.log("FengShuiMaster onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
     handleNewFactRequest(response);
 };
@@ -83,12 +83,12 @@ FengShuiMaster.prototype.eventHandlers.onLaunch = function (launchRequest, sessi
 /**
  * Overridden to show that a subclass can override this function to teardown session state.
  */
-FengShuiMaster.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, session) {
+SpaceGeek.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, session) {
     console.log("FengShuiMaster onSessionEnded requestId: " + sessionEndedRequest.requestId + ", sessionId: " + session.sessionId);
     // any cleanup logic goes here
 };
 
-FengShuiMaster.prototype.intentHandlers = {
+SpaceGeek.prototype.intentHandlers = {
     "GetNewFactIntent": function (intent, session, response) {
         handleNewFactRequest(response);
     },
@@ -125,6 +125,6 @@ function handleNewFactRequest(response) {
 // Create the handler that responds to the Alexa Request.
 exports.handler = function (event, context) {
     // Create an instance of the FengShuiMaster skill.
-    var FengShuiMaster = new FengShuiMaster();
-    FengShuiMaster.execute(event, context);
+    var SpaceGeek = new SpaceGeek();
+    SpaceGeek.execute(event, context);
 };
