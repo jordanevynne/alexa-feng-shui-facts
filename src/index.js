@@ -27,7 +27,7 @@ var APP_ID = undefined; //replace with "amzn1.echo-sdk-ams.app.[your-unique-valu
  * Array containing feng shui facts.
  */
 var FENG_SHUI_FACTS = [
-    "Feng shui is the ancient Chinese art of placement, and is used to faciliate flow of Chi.",
+    "Feng shui is the ancient Chinese art of placement, and is used to faciliate flow of chi.",
     "Feng shui translates to wind and water, and together these words represent harmony and balance.",
     "Feng shui has existed for over 3,000 years.",
     "Blue and Black are associated with water energy, and they support inner work.",
@@ -40,7 +40,14 @@ var FENG_SHUI_FACTS = [
     "To create good feng shui in your living room, avoid placing a mirror in a position where it reflects doors and windows.",
     "To create good feng shui in your living room, place green plants in the south east area of the room.",
     "To create good feng shui in your bathroom, open a window to let in fresh air.",
-    "To create good feng shui in your kitchen, it is recommended to have 9 oranges in a bowl for good luck and prosperity."
+    "To create good feng shui in your kitchen, it is recommended to have 9 oranges in a bowl for good luck and prosperity.",
+    "Copper pots and pans attract positive chi in a kitchen.",
+    "To create good feng shui, do not position your kitchen in the center of your home.",
+    "To create good feng shui in your home, avoid a round-shaped kitchen layout.",
+    "To create good feng shui in your laundry room, keep the dryer door closed at all times.",
+    "In feng shui, the commanding position is one where you have your back to the wall and your face to the door.",
+    "A desk made of wood has good feng shui.",
+    "A desk with rounded corners has good feng shui"
 ];
 
 /**
